@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | NFT preview card component</title>
+</head>
+<body class="bg-[hsl(217,54%,11%)]">
+
+<div class="m-20 p-5 bg-[hsl(216,50%,16%)] rounded-lg w-90 mx-auto">
+  <div class="relative w-80 m-auto group">
+  <!-- Overlay div that appears on hover -->
+  <div class="hover:cursor-pointer absolute inset-0 bg-[hsla(178,100%,50%,0.5)] bg-opacity-50 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity">
+    <img class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-12 h-12" src="images/icon-view.svg" alt="">
+  </div>
+
+  <!-- Your image -->
+  <img 
+    class="w-80 rounded-lg" 
+    src="images/image-equilibrium.jpg" 
+    alt="Equilibrium" 
+  />
+</div>
+  <h1 class="hover:cursor-pointer inline-block [Outfit] text-white font-bold mt-4 hover:text-[hsl(178,100%,50%)]">Equilibrium #3429</h1>
+  <p class="font-[Outfit] text-[hsl(215,51%,70%)] mt-3">Our Equilibrium collection promotes balance and calm.</p>
+  <div class="flex mt-3 justify-between">
+    <div class="">
+      <img class="mr-1 h-5 mt-1 inline-block mb-2" src="images/icon-ethereum.svg" alt="">
+      <span class="font-[Outfit] text-[hsl(178,100%,50%)]">0.041 ETH</span>
+    </div>
+    
+    <div>
+      <img class="mr-1 h-5 mt-1 inline-block mb-2" src="images/icon-clock.svg" alt="">
+      <span class="font-[Outfit] text-[hsl(215,51%,70%)]">3 days left</span>
+    </div>
+    
+  </div>
+  <hr class="border-[hsl(215,32%,27%)] mt-7">
+  <div class="flex">
+    <img class="w-10 mt-5 border-1 rounded-3xl border-white" src="images/image-avatar.png" alt="">
+    <span class=" font-[Outfit] text-[hsl(215,51%,70%)] mr-2 mt-7 ml-3 ">Creation of </span><span class="hover:cursor-pointer hover:text-[hsl(178,100%,50%)] font-[Outfit] text-white mt-7">Jules Wyvern</span> 
+  </div>
+  
+  
+
+  
+  
+  
+</div>
+
+</body>
+</html>
